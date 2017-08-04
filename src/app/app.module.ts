@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
 
+import { MainRouterModule } from './router.module';
 import { AppComponent } from './app.component';
 import { ApiService } from './services/api.service';
 import { BatchComponent } from './batches/batch-list/batch-list.component';
@@ -18,20 +18,7 @@ import { BatchService } from './batches/batch.service';
   imports: [
     BrowserModule,
     HttpModule,
-    RouterModule.forRoot([
-      {
-        path: 'batches',
-        component: BatchComponent
-      },
-      {
-        path: 'about',
-        component: AboutComponent
-      },
-      {
-        path: '',
-        component: BatchComponent
-      }
-    ])
+    MainRouterModule
   ],
   providers: [ApiService, BatchService],
   bootstrap: [AppComponent]
