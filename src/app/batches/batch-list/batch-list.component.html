@@ -1,0 +1,20 @@
+<div class="pa4">
+  <div class="overflow-auto">
+    <table class="f6 w-100 mw8 center" cellspacing="0">
+      <thead>
+        <tr>
+          <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Id</th>
+          <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Name</th>
+          <th class="fw6 bb b--black-20 tl pb3 pr3 bg-white">Grape</th>
+        </tr>
+      </thead>
+      <tbody class="lh-copy">
+        <tr *ngFor="let batch of batchService.batches | async">
+          <td class="pv3 pr3 bb b--black-20">{{batch.id}}</td>
+          <td class="pv3 pr3 bb b--black-20">{{batch.name}}</td>
+          <td class="pv3 pr3 bb b--black-20">{{batch.grape}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

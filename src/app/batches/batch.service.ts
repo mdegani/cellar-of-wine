@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { ApiService } from '../services/api.service';
 import { Subject } from 'rxjs/Subject';
+import { IBatch } from '../../types/batches.interface';
 
 @Injectable()
 export class BatchService {
 
-  public readonly batches: Subject<any> = new Subject();
+  public readonly batches: Subject<IBatch[]> = new Subject();
 
   constructor(private api: ApiService) { }
 

@@ -2,7 +2,9 @@
   "batches": [
     {
       "id":1,
-      "name":"First Batch"
+      "name":"First Batch",
+      "grape":"Merlot",
+      "startDate": null
     }
   ]
 }
