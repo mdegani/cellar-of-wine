@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+  html,
+  body {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
