@@ -6,7 +6,7 @@ import { BatchService } from '../batch.service';
   templateUrl: './batch-list.component.html',
   styleUrls: ['./batch-list.component.css']
 })
-export class BatchComponent implements OnInit {
+export class BatchListComponent implements OnInit {
 
   constructor(public batchService: BatchService) {
   }
