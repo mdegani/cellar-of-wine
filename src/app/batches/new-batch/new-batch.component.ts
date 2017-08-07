@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { dispatch } from '@angular-redux/store';
+import { IBatch } from '../../../types/batches.interface';
 
 @Component({
   selector: 'app-new-batch',
@@ -11,5 +13,5 @@ export class NewBatchComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  @dispatch() addBatch = (newBatch: IBatch) => ({ type: 'ADD_BATCH', payload: newBatch });
 }

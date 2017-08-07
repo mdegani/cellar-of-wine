@@ -16,7 +16,7 @@ export class BatchService {
     });
   }
 
-  addBatch(batch: IBatch){
-    this.api.post
+  addBatch(batch: IBatch) {
+    this.api.post('batches', batch);
   }
 }

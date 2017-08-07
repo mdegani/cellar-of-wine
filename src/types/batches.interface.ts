@@ -4,3 +4,11 @@ export interface IBatch {
   grape: string;
   startDate: Date;
 }
+
+export interface IBatchStore {
+  batches: IBatch[];
+}
+
+export interface IAppState {
+  batch: IBatchStore;
+}
